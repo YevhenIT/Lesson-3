@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- <script>
+        let userAge = parseInt(prompt('Введіть ваш вік', '18'));
+        const minAllowedUserAge = 18;
+
+        if (userAge < minAllowedUserAge)
+            console.log(`Доступ заборонено`)
+        else console.log(`Ласкаво просимо`);
+    </script> -->
+
+    <!-- <script>
+        //Крок 0.Позначення величини
+        //Вага вантажу - cargoWeight
+        //Максимальна вага - weightLimit
+        //Крок 1. Ведення величини
+
+        let cargoWeight = parseFloat(prompt('Вага вантажу'));
+        const weightLimit = 12;
+
+        //Крок 2. Розв'язування задачі
+        //Якщо cargoWeight < weightLimit
+        //  тоді вивести "можна"
+        //  інакше "Неможна"
+
+        if (cargoWeight < weightLimit)
+            alert(`можна`)
+        else
+            alert(`неможна`)
+    </script> -->
+    //--------------------------------------------------------------------------------------------------------
+    <!-- <script>
+        //Крок 0. Вводимо позначення
+        //вік працівника - workerAge
+        //мінімальний вік - minAllowedAge
+        //максимальний вік - maxAllowedAge
+        //Крок 1. Введення величин
+        let workerAge = parseInt(prompt('Вік працівника'));
+        const minAllowedAge = 32;
+        const maxAllowedAge = 45;
+
+        //Крок 2. Розв'язування задачі
+        if (workerAge >= -32 && workerAge <= 45)
+            alert('ok')
+        else
+            alert('nie')
+
+        // if(workerAge<minAllowedAge || workerAge>maxAllowedAge)
+        //         alert('ok')
+        // else
+        //         alert('nie')
+
+    </script> -->
+    //--------------------------------------------------------------------------------------------------------
+    <!-- <script>
+        //Вводимо вік користувача. Якщо це дитина (до 17 років), то запропонуємо купити морозиво, інкше запропонуємо пиво
+        //Крок 0. Вводимо позначення
+        //вік користувача - userAge
+        //граничний вік - edgeAge
+        //Крок 1. Введення величин
+        let userAge = parseInt(prompt('Ваш вік?'));
+        const edgeAge = 17
+        if (userAge <= edgeAge) {
+            if (confirm('Чи хочеш ти морозива?'))
+                alert('Бережи горло')
+            else
+                alert('Шкода ...')
+        }
+        else {
+            if (confirm('Чи хочеш ти пиво?'))
+                alert('Пийте з розумом')
+            else
+                alert('Пийте чай')
+        }
+    </script> -->
+    //--------------------------------------------------------------------------------------------------------
+    <!-- <script>
+        //Крок 0. Вводимо позначення
+        //Кількість балів - score
+        //Variant1//
+        // //Крок 1. Введення величин
+        // let score = parseInt(prompt('Ваша оцінка'));
+        // //Крок 2. Розв'язування задачі
+        // if (score === 5) alert('відмінно')
+        // else if (score === 4) alert('добре')
+        // else if (score === 3) alert('задовільно')
+        // else if (score === 1 || score === 2) alert('двійка')
+        // else alert('хуй')
+
+        //2
+
+        // //Крок 1. Введення величин
+        // let score = parseInt(prompt("score"));
+        // let result;
+        // //--------------- Знаходимо за допомогою SWITCH
+        // switch (score) {
+        //     case 2: result = "Незадовільна";
+        //         break;
+
+        //     case 3: result = "задовільно";
+        //         break;
+
+        //     case 4: result = "добре";
+        //         break;
+
+        //     case 5: result = "відмінно";
+        //         break;
+        //     default: result = "hyj"
+        //         break;
+        // }
+        // alert(result);
+    </script> -->
+    //--------------------------------------------------------------------------------------------------------
+    <!-- <script>
+        //Задача. З клавиатури вводиться номер місця, яку зайняв спортсмен. Вивести, яку він отримав 
+        //1-золота, 2-срібна, 3-ббронза
+        //Все інше - грамота
+        //Крок 0. Вводимо позначення
+        //номер місця -placeNum
+        //Крок 1. Введення величин
+        let placeNum = parseInt(prompt('Мійсце, яке зайняв спортсмен'));
+        //Крок 2. Розв'язування задачі
+        let res;
+        switch (placeNum) {
+            case 1: res = 'Золото'
+                break;
+
+            case 2: res = 'Срібло'
+                break;
+
+            case 3: res = 'Бронза'
+                break;
+
+            default: res = 'Грамота'
+                break;
+        }
+        alert(res);
+    </script> -->
+
+    <!-- <script>
+        //З клавіатури вводиться колір помідора: "red", "yellow", "green". Вивести на єкран у якому стані цей помідор:
+        //"red" - можна їсти
+        //"yellow" - дозріває 
+        //"green" - ще росте
+        let tomatoColor = prompt('колір помідора')
+        let res
+        switch (tomatoColor) {
+            case 'red': res = 'можна їсти'
+                break;
+
+            case 'yellow': res = 'дозріває'
+                break;
+
+            case 'green': res = 'ще росте'
+                break;
+            default: res = 'ще росте'
+                break;
+        }
+        alert(res);
+        //Крок 0. Вводимо позначення
+        //Крок 1. Введення величин
+    </script> -->
+
+    <!-- <script>
+        let score = parseInt(prompt('score'));
+        let res
+        switch (score) {
+            case 1:
+            case 2: res = "Незадовільно"
+                break;
+            case 3:
+            case 4:
+            case 5: res = 'Зараховано'
+                break;
+            default: res = 'Неправильна оцінка'
+                break;
+        }
+        alert(res);
+    </script> -->
+
+    <!-- <script>
+        let b = 1;
+        let a = 2
+        switch (a) {
+            case 1: document.write(a);
+                break;
+
+            case 3.5: document.write(a);
+                break;
+
+            case b + 1: document.write(a);
+                break;
+        }
+    </script> -->
+</body>
+
+</html>

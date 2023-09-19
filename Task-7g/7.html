@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>З клавіатури вводиться номер місяця. Вивести до якої пори він відноситься</h2>
+
+    <script>
+        let monthNumber = parseInt(prompt(`Введіть номер місяця.`, `1`))
+        let res
+
+        switch (monthNumber) {
+            case 12:
+            case 1:
+            case 2:
+                res = 'Зима'
+                break;
+            case 3:
+            case 4:
+            case 5:
+                res = 'Весна'
+                break;
+            case 6:
+            case 7:
+            case 8:
+                res = 'Літо'
+                break;
+            case 9:
+            case 10:
+            case 11:
+                res = 'Осінь'
+                break;
+            default:
+                res = 'Щось пішло не так'
+        }
+
+        alert(res)
+
+    </script>
+</body>
+
+</html>
